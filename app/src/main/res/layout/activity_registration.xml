@@ -20,14 +20,24 @@
             android:fontFamily="sans-serif"
             android:text="SIGN UP"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+        />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:text="Lorem ipsum dolor sit amet."
             android:textColor="#FFFFFF"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+        />
+
+        <TextView
+            android:id="@+id/text_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No response"
+        />
 
     </LinearLayout>
 
