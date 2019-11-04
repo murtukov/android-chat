@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <string-array name="country_arrays">
+        <item>Choose Country</item>
+        <item>Germany</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Russia</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+</resources>
