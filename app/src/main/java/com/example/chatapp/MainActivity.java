@@ -2,7 +2,9 @@ package com.example.chatapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
@@ -17,10 +19,15 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (true) {
-            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+        SharedPreferences sharedPref = getSharedPreferences("auth", Context.MODE_PRIVATE);
+        String token = sharedPref.getString("access_token", null);
+
+        if (null == token) {
+            startActivity(new Intent(this, LoginActivity.class));
         } else {
-            startActivity(new Intent(MainActivity.this, RegistrationActivity.class));
+            startActivity(new Intent(this, ContactsActivity.class));
         }
+
+        finish();
     }
 }

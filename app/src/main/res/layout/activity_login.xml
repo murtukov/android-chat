@@ -84,7 +84,6 @@
             android:textAllCaps="false"
             android:textColor="#2B3C17"
             android:textSize="17sp"
-            android:enabled="false"
         />
 
         <TextView

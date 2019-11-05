@@ -12,4 +12,8 @@
         <item>New Zealand</item>
         <item>India</item>
     </string-array>
+
+    <string name="api_login">
+        http://10.0.2.2:8000/api/login
+    </string>
 </resources>
